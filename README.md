@@ -1,9 +1,5 @@
 # BankSystem
 
-⭐️ Methodology
-
-Concurrency is a property of systems in which the processes of a computation are carried out simultaneously and can interact with each other. Synchronization is used to cause 2 or more processes to work sequentially in such a way that they do not interfere with each other, and they can get a job done. In this paper, primitive semaphores (acquire and release) were used along with a virtual timeline created through the use of for loops and thread built-in functions with the primary aim of developing an automated bank account management system in JAVA capable of running multiple consumer and producer threads. Five classes are part of the solution to the system: the main class which is called “bank”, and 4 other classes that connect with the main class to initialize the system and provide the user with meaningful information about their bank account. 
-
 ⭐️ Design
 
 📌 Scope/Overview
@@ -20,8 +16,6 @@ An array list of threads is used in the bank class to store different consumer a
 
 Semaphores are a type data structure that is being used for synchronization between the producer and consumer threads. In specific, they are used in the producer and the consumer classes, as well as in the bank account and credit card classes. The value of the semaphore is the number of units of the resource that are available (in the project, a binary semaphore is used with an initial value of 1 since there is only one resource). To enter a critical zone, a thread must acquire the right of access using the “acquire()”, and when exiting it frees it using the “release()” in JAVA. Semaphores are very important in the system as it cannot afford to have race conditions that mess up the amount deposited and deducted, and then result in a wrong message output.
 
-1.	Acquire: this primitive is used to block a resource.
-2.	Release: this primitive is used to release the blocked resource, allowing another thread to use it.
 
 🔵 Thread Sleep 
 
